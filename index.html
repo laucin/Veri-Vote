@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🗳️ Veri-Vote</h1>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage" class="box">
+    <h2>Enter Your Name to Vote</h2>
+    <input type="text" id="username" placeholder="Enter your name"><br>
+    <button onclick="enterVote()">Proceed to Vote</button>
+
+    <hr>
+
+    <h3>Admin Login</h3>
+    <input type="text" id="adminUser" placeholder="Admin Username"><br>
+    <input type="password" id="adminPass" placeholder="Password"><br>
+    <button onclick="adminLogin()">Login as Admin</button>
+
+    <br><br>
+
+    <!-- Restart Button -->
+    <button onclick="restartSystem()" class="btn-danger">Restart System</button>
+</div>
+
+<!-- VOTING PAGE -->
+<div id="votePage" class="page">
+    <h2 id="welcome"></h2>
+    <div id="candidates"></div>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<!-- ADMIN PAGE -->
+<div id="adminPage" class="page">
+    <h2>Admin Dashboard</h2>
+    <button onclick="showResults()">View Results</button>
+    <button onclick="finalizeResults()">Finalize Results</button>
+    <button onclick="logout()">Logout</button>
+    <div id="results"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
