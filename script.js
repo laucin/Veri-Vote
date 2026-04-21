@@ -3,7 +3,7 @@ let voters = JSON.parse(localStorage.getItem("voters")) || [];
 let candidates = JSON.parse(localStorage.getItem("candidates")) || [
     { name: "Dexter", votes: 0 },
     { name: "Emmanuel", votes: 0 },
-    { name: "Charlie", votes: 0 }
+    { name: "James", votes: 0 }
 ];
 
 let votingClosed = localStorage.getItem("votingClosed") === "true";
@@ -142,7 +142,7 @@ function restartSystem() {
     candidates = [
         { name: "Dexter", votes: 0 },
         { name: "Emmanuel", votes: 0 },
-        { name: "Charlie", votes: 0 }
+        { name: "James", votes: 0 }
     ];
 
     votingClosed = false;
