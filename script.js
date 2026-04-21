@@ -140,7 +140,7 @@ function restartSystem() {
 
     voters = [];
     candidates = [
-        { name: "Alice", votes: 0 },
+        { name: "emma", votes: 0 },
         { name: "Bob", votes: 0 },
         { name: "Charlie", votes: 0 }
     ];
