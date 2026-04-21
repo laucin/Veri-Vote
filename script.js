@@ -1,8 +1,8 @@
 // data
 let voters = JSON.parse(localStorage.getItem("voters")) || [];
 let candidates = JSON.parse(localStorage.getItem("candidates")) || [
-    { name: "Alice", votes: 0 },
-    { name: "Bob", votes: 0 },
+    { name: "emma", votes: 0 },
+    { name: "bob", votes: 0 },
     { name: "Charlie", votes: 0 }
 ];
 
