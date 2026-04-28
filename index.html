@@ -9,12 +9,12 @@
 
 <body>
 
-<h1>🗳️ Veri-Vote</h1>
+<h1>🗳️ Voting System</h1>
 
-<!-- LOGIN PAGE -->
+
 <div id="loginPage" class="box">
-    <h2>Enter Your Name to Vote</h2>
-    <input type="text" id="username" placeholder="Enter your name"><br>
+    <h2>Enter Your Matric Number to Vote</h2>
+    <input type="text" id="matricInput" placeholder="e.g. VUG/SEN/25/14827">
     <button onclick="enterVote()">Proceed to Vote</button>
 
     <hr>
@@ -26,24 +26,26 @@
 
     <br><br>
 
-    <!-- Restart Button -->
     <button onclick="restartSystem()" class="btn-danger">Restart System</button>
 </div>
 
-<!-- VOTING PAGE -->
+
 <div id="votePage" class="page">
     <h2 id="welcome"></h2>
+    <p id="matricDisplay"></p>
     <div id="candidates"></div>
     <button onclick="logout()">Logout</button>
 </div>
 
-<!-- ADMIN PAGE -->
+
 <div id="adminPage" class="page">
     <h2>Admin Dashboard</h2>
     <button onclick="showResults()">View Results</button>
+    <button onclick="showVoters()">View Voters</button>
     <button onclick="finalizeResults()">Finalize Results</button>
     <button onclick="logout()">Logout</button>
     <div id="results"></div>
+    <div id="voterList"></div>
 </div>
 
 <script src="script.js"></script>
