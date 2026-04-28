@@ -3,6 +3,7 @@ body {
     text-align: center;
     background: linear-gradient(to right, #e8f5e9, #c8e6c9);
     margin: 0;
+    padding: 20px;
 }
 
 h1 {
@@ -13,7 +14,7 @@ h1 {
     background: white;
     padding: 25px;
     margin: 20px auto;
-    width: 320px;
+    width: 340px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
@@ -24,6 +25,20 @@ input {
     width: 90%;
     border: 1px solid #ccc;
     border-radius: 8px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2e7d32;
+    box-shadow: 0 0 5px rgba(46,125,50,0.3);
+}
+
+small#matricHint {
+    display: block;
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 8px;
 }
 
 button {
@@ -36,6 +51,8 @@ button {
     border-radius: 8px;
     width: 95%;
     font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s;
 }
 
 button:hover {
@@ -51,10 +68,52 @@ button:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+.candidate h3 {
+    margin: 0 0 10px 0;
+    color: #2e7d32;
+}
+
 .page {
     display: none;
 }
-.btn-danger{
-    background-color: red;
+
+.btn-danger {
+    background-color: #c62828;
     color: white;
+}
+
+.btn-danger:hover {
+    background-color: #b71c1c;
+}
+
+.voter-entry {
+    background: #f1f8e9;
+    margin: 8px auto;
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 280px;
+    text-align: left;
+    font-size: 13px;
+    border-left: 4px solid #2e7d32;
+}
+
+.matric-badge {
+    font-size: 13px;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#results p {
+    background: #f1f8e9;
+    margin: 8px auto;
+    padding: 10px;
+    border-radius: 8px;
+    width: 280px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
 }
